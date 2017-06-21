@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<script src="scrum.js"></script>
+		<style>
+#backlog {
+}
+.storyCard {
+	border-radius: 1em;
+	border: 2px solid grey;
+	min-height: 5em;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	padding: 1em .5em;
+	margin: .5em;
+}
+.storyPoints {
+	border-radius: 1em;
+    border: 1px solid black;
+    height: 1em;
+    width: 1em;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    right: 4px;
+    top: 2px;
+}
+.storyName {
+	margin: 1em 0;
+	display: block;
+}
+		</style>
+	</head>
+	<body>
+		<div id="backlog"></div>
+		<button onClick="window.project = new Project()">New Project</button>
+		<button onClick="window.project.helloWorld();this.style.display='none'">Hello, World!</button>
+		<button onClick="window.project.groom()">Groom</button>
+	</body>
+</html>
